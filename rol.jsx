@@ -1,9 +1,0 @@
-function rol ({ children, type = "default" }) {
-    return (
-        <span className={`badge badge-${type}`}>
-            {children}
-        </span>
-    );
-}
-
-export default rol;
