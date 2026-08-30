@@ -1,0 +1,23 @@
+import Card from "../common/tarjeta";
+import Badge from "../common/rol";
+
+function guildtarjeta({ guild }) {
+
+    return (
+        <Card title={guild.name}>
+
+            <p>{guild.motto}</p>
+
+            <Badge type={guild.type.toLowerCase()}>
+                {guild.type}
+            </Badge>
+
+            <p>
+                Miembros: {guild.members}
+            </p>
+
+        </Card>
+    );
+}
+
+export default guildtarjeta;
